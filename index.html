@@ -1,15 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruit-brust</title>
-</head>
-<body>
-    <header></header>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tea House</title>
+    <!-- tailwind and daisy UI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lato google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/d7b7563d24.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- tailwind custom color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "gradient-start": "#FF8938",
+              "gradient-end": "#F00",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .font-lato {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font-lato">
+    <header>
+      <nav
+        class="max-w-screen-lg mx-auto bg-[#F85559] rounded-full px-5 py-2 my-5"
+      >
+        <div class="navbar flex justify-between">
+          <div class="text-white text-sm">
+            <ul class="flex justify-around gap-3 font-medium">
+              <li><a> Home </a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+          <div class="text-white">
+            <img src="./images/logo.png" alt="" class="h-12" />
+            <a class="btn btn-ghost normal-case text-3xl"> Fruit Brust</a>
+          </div>
+          <div class="opacity-0 lg:opacity-100">
+            <div class="form-control relative">
+              <input
+                type="text"
+                placeholder="Search here"
+                class="input lg:w-72 rounded-full text-sm"
+              />
+            </div>
+            <div class="absolute right-56">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <main></main>
 
     <footer></footer>
-</body>
+  </body>
 </html>
