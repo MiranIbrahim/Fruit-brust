@@ -59,7 +59,9 @@
           </div>
           <div class="lg:text-white">
             <img src="./images/logo.png" alt="" class="h-12" />
-            <a class="btn btn-ghost normal-case text-xl lg:text-3xl"> Fruit Brust</a>
+            <a class="btn btn-ghost normal-case text-xl lg:text-3xl">
+              Fruit Brust</a
+            >
           </div>
           <div class="hidden lg:block relative">
             <div class="form-control relative">
@@ -233,29 +235,86 @@
           </div>
         </div>
         <!-- floating banner -->
-        <div class="hidden lg:block card w-10/12 h-32 mx-auto bg-base-100 shadow-xl -mt-12">
+        <div
+          class="hidden lg:block card w-10/12 h-32 mx-auto bg-base-100 shadow-xl -mt-12"
+        >
           <div class="card-body grid grid-cols-5 gap-5">
             <div class="">
-              <img src="./images/fruit1.png" alt="" class="h-16 ml-5"/>
+              <img src="./images/fruit1.png" alt="" class="h-16 ml-5" />
             </div>
             <div class="" class="card-actions">
-              <img src="./images/fruit2.png" alt="" class="h-16 ml-5"/>
+              <img src="./images/fruit2.png" alt="" class="h-16 ml-5" />
             </div>
             <div class="" class="card-actions">
-              <img src="./images/fruit3.png" alt="" class="h-16 ml-5"/>
+              <img src="./images/fruit3.png" alt="" class="h-16 ml-5" />
             </div>
             <div class="" class="card-actions">
-              <img src="./images/fruit4.png" alt="" class="h-16 ml-5"/>
+              <img src="./images/fruit4.png" alt="" class="h-16 ml-5" />
             </div>
             <div class="" class="card-actions">
-              <img src="./images/fruit5.png" alt="" class="h-16 ml-5"/>
+              <img src="./images/fruit5.png" alt="" class="h-16 ml-5" />
             </div>
           </div>
         </div>
       </div>
     </header>
 
-    <main></main>
+    <main>
+      <!-- deal of the day -->
+      <div class="max-w-screen-lg mx-auto px-0 py-2 my-16">
+        <div class="lg:flex justify-between">
+          <!-- heading and description -->
+          <div class="lg:max-w-lg space-y-5 text-center lg:text-left">
+            <h3 class="text-4xl font-extrabold">Deal of the day</h3>
+            <p style="color:#12121299;">
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical Latin literature from 45 BC, making
+              it over 2000 years old.
+            </p>
+          </div>
+          <!-- count down -->
+          <div>
+            <div class="grid grid-flow-col gap-3 lg:gap-5 justify-center">
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-4xl font-extrabold">
+                  <span style="--value: 15"></span>
+                </span>
+                <span style="color:#12121299;">Days</span>
+              </div>
+              <div class="mt-2">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-4xl font-extrabold">
+                  <span style="--value: 10"></span>
+                </span>
+                <span style="color:#12121299;">Hours</span>
+              </div>
+              <div class="mt-2">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-4xl font-extrabold">
+                  <span style="--value: 24"></span>
+                </span>
+                <span style="color:#12121299;">Minutes</span>
+              </div>
+              <div class="mt-2">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-4xl font-extrabold">
+                  <span style="--value: 18"></span>
+                </span>
+                <span style="color:#12121299;">Seconds</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </main>
 
     <footer></footer>
   </body>
